@@ -34,7 +34,9 @@ export class AppComponent {
       return 'disabled';
     }
   }
-
+  getWindowIndex(index: number) {
+    return Math.abs(this.currentPage - index) < 5;
+  }
   images = [
     {
       title: 'My CAT',
@@ -50,6 +52,41 @@ export class AppComponent {
       title: 'This is beautiful',
       url:
         'https://images.unsplash.com/photo-1616067064617-31a11565509d?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    },
+    {
+      title: 'My Desk',
+      url:
+        'https://images.unsplash.com/photo-1615852993296-b42d4dbb5555?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0Mnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    },
+    {
+      title: 'My Desk',
+      url:
+        'https://images.unsplash.com/photo-1615852993296-b42d4dbb5555?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0Mnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    },
+    {
+      title: 'My Desk',
+      url:
+        'https://images.unsplash.com/photo-1615852993296-b42d4dbb5555?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0Mnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    },
+    {
+      title: 'My Desk',
+      url:
+        'https://images.unsplash.com/photo-1615852993296-b42d4dbb5555?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0Mnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    },
+    {
+      title: 'My Desk',
+      url:
+        'https://images.unsplash.com/photo-1615852993296-b42d4dbb5555?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0Mnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    },
+    {
+      title: 'My Desk',
+      url:
+        'https://images.unsplash.com/photo-1615852993296-b42d4dbb5555?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0Mnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    },
+    {
+      title: 'My Desk',
+      url:
+        'https://images.unsplash.com/photo-1615852993296-b42d4dbb5555?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0Mnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
     },
     {
       title: 'My Desk',

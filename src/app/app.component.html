@@ -9,14 +9,17 @@
       >
         <span class="page-link">Previous</span>
       </li>
-      <li
-        class="page-item"
-        *ngFor="let image of images; let i = index"
-        [ngClass]="{ active: i === currentPage }"
-        (click)="updateCurrentPage(i); getLastPage(images.length - 1)"
-      >
-        <a class="page-link" href="#" tabindex="-1">{{ i + 1 }}</a>
-      </li>
+      <ng-container *ngFor="let image of images; let i = index">
+        <li
+          class="page-item"
+          [ngClass]="{ active: i === currentPage }"
+          (click)="updateCurrentPage(i); getLastPage(images.length - 1)"
+          *ngIf="getWindowIndex(i)"
+        >
+          <a class="page-link" href="#" tabindex="-1">{{ i + 1 }}</a>
+        </li>
+      </ng-container>
+
       <li
         class="page-item"
         [ngClass]="getDisable('next')"
