@@ -29,6 +29,12 @@
       </li>
     </ul>
   </nav>
+  <div [ngSwitch]="currentPage">
+    <div *ngSwitchCase="0">This is the 0 page</div>
+    <div *ngSwitchCase="1">This is the 1 page</div>
+    <div *ngSwitchCase="2">This is the 2 page</div>
+    <div *ngSwitchDefault>This is the default page</div>
+  </div>
   <div class="container">
     <div class="col-6 col-offset-3">
       <h1>{{ images[currentPage].title }}</h1>
